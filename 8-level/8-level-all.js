@@ -29,3 +29,15 @@ const halvingSum = (x) => {
   } while (x > 2);
   return sum;
 };
+
+//https://www.codewars.com/kata/5733f948d780e27df6000e33/train/javascript
+const cutCube = (v, n) => {
+  console.clear();
+  console.log(`===> START HERE! <===`);
+  console.log(`Initial values: v=${v}, n=${n}`);
+  console.log(`v/n=${v / n}`);
+  console.log(`Math.cbrt(v/n)=${Math.cbrt(v / n)}`);
+  console.log(`Math.cbrt(v/n)%1===0 (${Math.cbrt(v / n) % 1 === 0})`);
+  return Math.cbrt(v / n) % 1 === 0;
+};
+console.log(cutCube(50000, 50));
