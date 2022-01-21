@@ -26,6 +26,7 @@ const reduce = (a) => {
       console.log(
         '      check if last element of res and current element are opposite directions'
       );
+
       if (
         (a[i] === 'NORTH' && res[res.length - 1] !== 'SOUTH') ||
         (a[i] === 'SOUTH' && res[res.length - 1] !== 'NORTH') ||
@@ -44,10 +45,7 @@ const reduce = (a) => {
       }
     }
   }
-
-  return res;
 };
-
 const actualResult = reduce(testArray);
 
 /* const dirReduc = (a) => {
@@ -70,4 +68,5 @@ const actualResult = reduce(testArray);
     }
   }
   return res;
-}; */
+};
+*/
