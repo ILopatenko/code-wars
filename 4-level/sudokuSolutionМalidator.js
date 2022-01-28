@@ -17,6 +17,31 @@ const findMissingLetter = (a) => {
   console.log(`\n\n   ===> START HERE !!!!`);
   console.log(`test data: `, a);
   const totalSum = 45;
+  let current;
+  let line = 0;
+  let column = 0;
+  let first = 0;
+  let second;
+  let third;
+  for (let i = 0; i < a.length; i++) {
+    console.log(`\niteration i=${i}`);
+    let column = 0;
+    for (let j = 0; j < a.length; j++) {
+      console.log(`\niteration j=${j}`);
+      current = a[i][j];
+      console.log(`current is "${current}"`);
+      console.log(`add current to line`);
+      line += current;
+      console.log(`line is `, line);
+
+      console.log(`add current to first`);
+      first += current;
+      console.log(`first is `, first);
+
+      console.log(`add current to line`);
+      line += current;
+    }
+  }
 };
 
 const actualResult = findMissingLetter(testArray);
