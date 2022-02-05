@@ -41,3 +41,6 @@ const cutCube = (v, n) => {
   return Math.cbrt(v / n) % 1 === 0;
 };
 console.log(cutCube(50000, 50));
+
+//https://www.codewars.com/kata/54598d1fcbae2ae05200112c
+const all=(a,f)=>a.every(f)
