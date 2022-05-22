@@ -2,7 +2,7 @@
 //TITLE
 const testData = ['a', 'b', 'c', 'd', 'f'];
 const expecterResult = 'e';
-const findMissingLetter = (a) => {
+const funcrionName = (a) => {
   console.clear();
   console.log(`\n\n   ===> START HERE !!!!`);
   console.log(`test data input: "${a}"`);
@@ -16,6 +16,6 @@ const findMissingLetter = (a) => {
   }
 };
 
-const actualResult = findMissingLetter(testData);
+const actualResult = funcrionName(testData);
 const isEqual = actualResult === expecterResult;
 console.log(`\n   ===>FINAL RESULT`, isEqual);
