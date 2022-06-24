@@ -1,7 +1,6 @@
 //https://www.codewars.com/kata/56a5d994ac971f1ac500003e
 const strarr = ['zone', 'abigail', 'theta', 'form', 'libe', 'zas'];
 const k = 2;
-
 const longestConsec = (s, k) => {
   if (k <= 0 || k > s.length || s.length === 0) return '';
   const res = {};
@@ -39,7 +38,6 @@ const longestConsec = (s, k) => {
           `current combination ${accum} is not bigger than max ${maxValue}`
         );
       }
-
       accum -= s[startIndex].length;
       console.log(`decrease accum to a first value. now accum = `, accum);
       startIndex++;
